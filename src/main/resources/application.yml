@@ -10,7 +10,7 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://rm-2ze806i1i971v3wycoo.mysql.rds.aliyuncs.com:3306/blog?serverTimezone=GMT%2B8&allowMultiQueries=true
+    url: jdbc:mysql://43.138.109.202:3306/blog?serverTimezone=GMT%2B8&allowMultiQueries=true
     username: root
     password: Pan19970218
     hikari:
@@ -30,12 +30,12 @@ spring:
       connection-test-query: SELECT 1
   #redis配置
   redis:
-    host: 47.95.216.30
+    host: 43.138.109.202
     port: 6379
     password: redis
   #mq配置
   rabbitmq:
-    host: 47.95.216.30
+    host: 43.138.109.202
     port: 5672
     username: guest
     password: guest
@@ -60,7 +60,7 @@ spring:
 
 #es配置
 elasticsearch:
-  host: 47.95.216.30
+  host: 43.138.109.202
   port: 9200
 
 #配置MybatisPlus
